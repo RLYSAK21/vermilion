@@ -7,6 +7,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
+
     <title>Vermillion</title>
 </head>
 
@@ -48,7 +54,7 @@
     <div id="our_products" class="our-products_box">
         <h1 class="our_products_title font_size_500">Our Products</h1>
         <div class="slider-container_our_products">
-            <div class="slider_our_products slider">
+            <div class="slider_our_products">
                 <div class="slider_our_products__box">
                     <div class="our_products_img">
                         <img src="./images/Rectangle 29.png" alt="">
@@ -153,9 +159,10 @@
                             Egypt, Morocco, South Korea, Malyasia, Thailand etc.</p>
                     </div>
                     <div class="countries_colloms">
-                        <div class="colloms" style="float: left; width: 33%;">
+                        <div class="colloms font_size_500_14px" style="float: left; width: 33%;">
                             <ul>
-                                <li style="list-style: georgian outside url(./countries_flags/Ukraine.svg);">Ukraine
+                                <li style="list-style: georgian outside url(./countries_flags/Ukraine.svg);">
+                                    <span>Ukraine</span>
                                 </li>
                                 <li style="list-style: georgian outside url(./countries_flags/Germany.svg);">Germany
                                 </li>
@@ -172,7 +179,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="colloms" style="float: left; width: 33%;">
+                        <div class="colloms font_size_500_14px" style="float: left; width: 33%;">
                             <ul>
                                 <li style="list-style: georgian outside url(./countries_flags/italy.svg);">Italy</li>
                                 <li style="list-style: georgian outside url(./countries_flags/Tunisia.svg);">Tunisia
@@ -189,7 +196,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="colloms" style="float: right; width: 33%;">
+                        <div class="colloms font_size_500_14px" style="float: right; width: 33%;">
                             <ul>
                                 <li style="list-style: georgian outside url(./countries_flags/china.svg);">China</li>
                                 <li style="list-style: georgian outside url(./countries_flags/SouthKorea.svg);">South
@@ -282,7 +289,7 @@
 
                         <div class="teammate">
                             <div class="teammate_photo">
-                                <img src="./images/Rectangle 13.png" alt="">
+                                <img src="./images/Rectangle 13-2.png" alt="">
                             </div>
                             <div class="teammate_info">
                                 <h1>
@@ -304,7 +311,7 @@
 
                         <div class="teammate">
                             <div class="teammate_photo">
-                                <img src="./images/Rectangle 13.png" alt="">
+                                <img src="./images/Rectangle 13-3.png" alt="">
                             </div>
                             <div class="teammate_info">
                                 <h1>
@@ -326,7 +333,7 @@
 
                         <div class="teammate">
                             <div class="teammate_photo">
-                                <img src="./images/Rectangle 13.png" alt="">
+                                <img src="./images/Rectangle 13-4.png" alt="">
                             </div>
                             <div class="teammate_info">
                                 <h1>
@@ -407,6 +414,17 @@
             <p>&copy; Vermillion Swiss Trade 2023. All rights reserved.</p>
         </div>
     </footer>
+    <script>
+    $(document).ready(function() {
+        $('.slider').slick({
+          autoplay: true,
+          autoplaySpeed: 2000,
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          arrows: false
+        });
+      });
+    </script>
 </body>
 
 </html>
