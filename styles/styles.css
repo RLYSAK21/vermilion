@@ -43,6 +43,7 @@ body {
 header {
     height: 920px;
     background-image: url(../images/Rectangle\ 1.png);
+    background-size: cover;
 }
 
 .header {
@@ -51,6 +52,12 @@ header {
     padding-left: 130px;
     padding-right: 127px;
     justify-content: space-between;
+}
+@media only screen and (min-width: 1440px)  {
+    .header {
+        padding-left: 270px;
+        padding-right: 267px;
+    }
 }
 
 .font_family {
@@ -785,4 +792,10 @@ footer {
 .footer_nav {
     margin-top: 0;
     margin-left: 0;
+}
+@media only screen and (min-width: 1440px)  {
+    .header {
+        padding-left: 270px;
+        padding-right: 267px;
+    }
 }
