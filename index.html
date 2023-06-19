@@ -21,7 +21,7 @@
         <div class="header">
             <img src="./images/Vermillion Main Logo 2400x1800 (4) 1.svg" alt="Logo" class="logo">
             <nav>
-                <ul cla>
+                <ul>
                     <li><a href="#about_us">About Us</a></li>
                     <li><a href="#our_products">Our Products</a></li>
                     <li><a href="#map">Map of Destinations</a></li>
@@ -113,8 +113,7 @@
                 </div>
                 <div class="supplier-information d-flex">
                     <div>
-                        <div style="left: 23px;" class="line"></div>
-                        <div style="margin-left: 33px;" class="supplier-information_box mg-left-33">
+                        <div class="supplier-information_box">
                             <h1>A</h1>
                             <p class="font_family">Vermillion SA is a reputable provider of agricultural goods with a
                                 long track record and
@@ -123,8 +122,7 @@
 
                     </div>
                     <div>
-                        <div style="left: 423px;" class="line"></div>
-                        <div class="supplier-information_box mg-left-33">
+                        <div class="supplier-information_box">
                             <h1>B</h1>
                             <p class="font_family">Vermillion SA's founders have substantial expertise in trading
                                 oilseed byproducts and
@@ -134,8 +132,7 @@
                         </div>
                     </div>
                     <div>
-                        <div class="line"></div>
-                        <div class="supplier-information_box mg-left-33">
+                        <div class="supplier-information_box">
                             <h1>C</h1>
                             <p class="font_family">We ensure that the best quality goods are promptly transported
                                 directly from processing
@@ -418,13 +415,13 @@
         $(document).ready(function () {
             $('.slider').slick({
                 autoplay: true,
-                infinite: true,
                 autoplaySpeed: 2000,
                 slidesToShow: 4,
                 slidesToScroll: 1,
                 arrows: false
             });
         });
+
     </script>
 </body>
 

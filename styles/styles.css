@@ -15,11 +15,13 @@
     height: 33px;
     margin-top: 24px;
     font-size: 14px;
-    
+
 }
+
 #subject::placeholder {
     width: 100px;
 }
+
 #message {
     margin-top: 24px;
     resize: none;
@@ -43,7 +45,8 @@ body {
 header {
     height: 920px;
     background-image: url(../images/Rectangle\ 1.png);
-    background-size: cover;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
 .header {
@@ -52,12 +55,6 @@ header {
     padding-left: 130px;
     padding-right: 127px;
     justify-content: space-between;
-}
-@media only screen and (min-width: 1440px)  {
-    .header {
-        padding-left: 270px;
-        padding-right: 267px;
-    }
 }
 
 .font_family {
@@ -124,13 +121,15 @@ nav ul li a {
     color: #fff;
     font-size: 16px;
     cursor: pointer;
-    width: 138px;
+    width: 138px !important;
+    min-width: 138px;
     height: 48px;
     border: 1.5px solid #FFFFFF;
     border-radius: 14px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 55px;
 }
 
 .slogan_about_company {
@@ -214,38 +213,30 @@ nav ul li a {
 }
 
 .supplier-information_box {
-    width: 310px;
+    min-width: 310px;
     margin-right: 57px;
+    height: 215px;
+    padding-left: 33px;
+/* _________ */
+    border-left: 2px solid #C9C9C9;
+    position: relative;
 }
 
-.mg-left-33 {
-    margin-left: 33px;
-}
-
-.line {
-    position: absolute;
-    width: 215px;
-    height: 0px;
-    left: 823px;
-    top: 1199px;
-    margin-top: 106.5px;
-    border: 1px solid #C9C9C9;
-    transform: rotate(90deg);
-}
-
-.line:after {
+.supplier-information_box::before {
     content: '';
-    display: block;
-    border-bottom: 2px solid #EC1C24;
-    margin-top: -1px;
-    margin-left: 54px;
-    width: 162px;
+    position: absolute;
+    bottom: -10px;
+    border-left: 2px solid;
 }
 
-.supplier-information_box {
-    width: 310px;
-    height: 161px;
+.supplier-information_box::before {
+    bottom: 0;
+    top: 55px;
+    left: -2px;
+    border-color: #EC1C24;
 }
+
+/* ------- */
 
 .supplier-information_box h1 {
     width: 23px;
@@ -259,12 +250,11 @@ nav ul li a {
 }
 
 .supplier-information_box p {
-    width: 310px;
     height: 162px;
     margin-top: 15px;
 }
 
-/* -------------------------- */
+/* -------------------------------------------------------------------------------------- */
 .slider-container {
     position: absolute;
     width: 100vw;
@@ -291,6 +281,7 @@ nav ul li a {
     height: 318px !important;
     object-fit: cover;
 }
+
 .slick-track {
     display: flex !important;
     gap: 10px;
@@ -467,7 +458,7 @@ nav ul li a {
     position: absolute;
     content: '';
     border-bottom: 1px solid #E3DBEB;
-    width:120px;
+    width: 120px;
     transform: translateX(-42%);
     bottom: -2px;
     left: 50%;
@@ -575,7 +566,7 @@ nav ul li a {
 /* ----------------------------------------------------------------------------------- */
 
 .our_team {
-    width: 1440px;
+    /* width: 1440px; */
     height: 581px;
     background: #F0EDF3;
     padding-top: 60px;
@@ -662,11 +653,14 @@ nav ul li a {
 
 .get_in_touch {
     height: 443px;
+    padding-left: 130px;
+    padding-top: 80px;
 }
 
 .get_in_touch__info {
-    margin-left: 130px;
-    margin-top: 80px;
+    /* margin-left: 130px;
+    margin-top: 80px; */
+
     width: 1180px;
     height: 283px;
 }
@@ -793,9 +787,10 @@ footer {
     margin-top: 0;
     margin-left: 0;
 }
-@media only screen and (min-width: 1440px)  {
+
+@media only screen and (min-width: 1441px) {
     .header {
-        padding-left: 270px;
-        padding-right: 267px;
+        padding-left: 370px;
+        padding-right: 367px;
     }
 }
