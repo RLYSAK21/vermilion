@@ -118,8 +118,12 @@ nav ul li a {
 
 .button {
     background: none;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
     color: #fff;
     font-size: 16px;
+
     cursor: pointer;
     width: 138px !important;
     min-width: 138px;
@@ -217,7 +221,7 @@ nav ul li a {
     margin-right: 57px;
     height: 215px;
     padding-left: 33px;
-/* _________ */
+    /* _________ */
     border-left: 2px solid #C9C9C9;
     position: relative;
 }
@@ -793,25 +797,40 @@ footer {
         padding-left: 370px;
         padding-right: 367px;
     }
+
     .slogan_about_company {
         margin-left: 370px;
     }
+
     .history_of_company {
         padding: 80px 370px;
     }
+
     .slider-container_our_products {
         margin-left: 211px;
     }
+
     .map {
         padding: 177px 302px 18px 370px;
     }
+
     .partners {
         padding: 64px 0 80px 370px;
     }
+
     .our_team_box {
         margin-left: 370px;
     }
+
     .get_in_touch {
         padding-inline: 370px;
+    }
+
+    .partners_info_images_img1 {
+        left: 950px;
+    }
+
+    .partners_info_images_img2 {
+        left: 1130px;
     }
 }
