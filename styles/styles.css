@@ -653,7 +653,7 @@ nav ul li a {
 
 .get_in_touch {
     height: 443px;
-    padding-left: 130px;
+    padding-inline: 130px;
     padding-top: 80px;
 }
 
@@ -792,5 +792,26 @@ footer {
     .header {
         padding-left: 370px;
         padding-right: 367px;
+    }
+    .slogan_about_company {
+        margin-left: 370px;
+    }
+    .history_of_company {
+        padding: 80px 370px;
+    }
+    .slider-container_our_products {
+        margin-left: 211px;
+    }
+    .map {
+        padding: 177px 302px 18px 370px;
+    }
+    .partners {
+        padding: 64px 0 80px 370px;
+    }
+    .our_team_box {
+        margin-left: 370px;
+    }
+    .get_in_touch {
+        padding-inline: 370px;
     }
 }
