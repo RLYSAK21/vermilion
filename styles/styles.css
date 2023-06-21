@@ -472,7 +472,7 @@ nav ul li a {
     width: 639px;
     height: 664px;
     margin-left: 59px;
-    background-image: url(../images/world\ 1.png);
+    background-image: url(../images/world\ 1.svg);
 }
 
 /* ----------------------------------------------------------------------------------- */
@@ -791,8 +791,49 @@ footer {
     margin-top: 0;
     margin-left: 0;
 }
-
 @media only screen and (min-width: 1441px) {
+    .header {
+        padding-left: 210px;
+        padding-right: 207px;
+    }
+
+    .slogan_about_company {
+        margin-left: 210px;
+    }
+
+    .history_of_company {
+        padding: 80px 210px;
+    }
+
+    .slider-container_our_products {
+        margin-left: 170px;
+    }
+
+    .map {
+        padding: 177px 20px 18px 210px;
+    }
+
+    .partners {
+        padding: 64px 0 80px 210px;
+    }
+
+    .our_team_box {
+        margin-left: 210px;
+    }
+
+    .get_in_touch {
+        padding-inline: 210px;
+    }
+
+    .partners_info_images_img1 {
+        left: 790px;
+    }
+
+    .partners_info_images_img2 {
+        left: 970px;
+    }
+}
+@media only screen and (min-width: 1601px) {
     .header {
         padding-left: 370px;
         padding-right: 367px;
