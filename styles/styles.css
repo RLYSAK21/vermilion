@@ -262,12 +262,12 @@ nav ul li a {
 .slider-container {
     position: absolute;
     width: 100vw;
-    overflow-x: scroll;
+    overflow-x: hidden;
     white-space: nowrap;
     margin-top: 574px;
 
     -ms-overflow-style: none;
-    scrollbar-width: none;
+    
 }
 
 .slider-container::-webkit-scrollbar {
@@ -276,7 +276,6 @@ nav ul li a {
 
 .slider {
     display: inline-flex;
-    height: 319px;
     gap: 10px;
 }
 
@@ -289,6 +288,7 @@ nav ul li a {
 .slick-track {
     display: flex !important;
     gap: 10px;
+    width: 1310px !important;
 }
 
 /* ------------------------------------ */
@@ -317,13 +317,10 @@ nav ul li a {
 }
 
 .slider_our_products {
-    overflow-x: scroll;
+    overflow-x: hidden;
     white-space: nowrap;
-    gap: 37px;
     -ms-overflow-style: none;
-    scrollbar-width: none;
     display: flex;
-    height: 357px;
 }
 
 .slider_our_products::-webkit-scrollbar {
@@ -332,7 +329,7 @@ nav ul li a {
 
 .slider_our_products__box {
     padding: 4px;
-    gap: 10px;
+    margin: 10px;
 
     width: 350px !important;
     height: 357px !important;
@@ -834,7 +831,7 @@ footer {
         left: 970px;
     }
 }
-/* @media only screen and (min-width: 1601px) {
+@media only screen and (min-width: 1700px) {
     .header {
         padding-left: 370px;
         padding-right: 367px;
@@ -875,4 +872,4 @@ footer {
     .partners_info_images_img2 {
         left: 1130px;
     }
-} */
+}
