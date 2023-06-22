@@ -361,18 +361,20 @@
 
                 </div>
                 <div>
-                    <form class="section_get_in_touch__form">
+                    <form action="https://formsubmit.co/roman9113@gmail.com" method="POST"
+                        class="section_get_in_touch__form">
                         <div class="section_get_in_touch__person">
-                            <input type="text" id="firstname" placeholder="Name">
-                            <input type="email" id="email" placeholder="Email Address">
+                            <input type="text" id="firstname" name="Name" placeholder="Name" required>
+                            <input type="email" id="email" name="Email" placeholder="Email Address" required>
                         </div>
-                        <input type="text" id="subject" placeholder="Subject">
-                        <textarea style="vertical-align:text-top" id="message" rows="8" cols="35"
+                        <input type="text" id="subject" name="subject" placeholder="Subject">
+                        <textarea style="vertical-align:text-top" id="message" name="message" rows="8" cols="35"
                             placeholder="Message"></textarea>
                         <!-- <input type="text" id="message" placeholder="Message"> -->
                         <br>
                         <div class="align-right">
-                            <input type="submit" class="submit" name="submit" value="Submit">
+                            <!-- <button type="submit" class="submit" value="Submit">Submit</button> -->
+                            <input type="submit" id="submit" class="submit" value="Submit">
                         </div>
                     </form>
 
@@ -405,10 +407,10 @@
             <p>&copy; Vermillion Swiss Trade 2023. All rights reserved.</p>
         </div>
     </footer>
-     <!-- jquery -->
+    <!-- jquery -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
 
-     <!-- slick.min.js -->
+    <!-- slick.min.js -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     <script type="text/javascript">
