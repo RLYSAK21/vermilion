@@ -893,10 +893,18 @@ screen and (max-width: 428px) {
 
     .mobile-header {
         display: flex;
+        flex-direction: column;
         width: 337px;
         margin: 0 auto;
         justify-content: space-between;
         align-items: center;
+        padding-top: 31px;
+    }
+
+    .mobile-nav-header {
+        width: 337px;
+        display: flex;
+        justify-content: space-between;
     }
 
     .history_of_company_box_head,
@@ -932,6 +940,10 @@ screen and (max-width: 428px) {
 
     .footer_nav {
         flex-direction: column;
+    }
+
+    header {
+        height: 667px;
     }
 
     .slogan_about_company {
@@ -1030,10 +1042,20 @@ screen and (max-width: 428px) {
         margin-top: 1600px;
     }
 
+    .countries_colloms {
+        margin-top: 24px;
+    }
+
+    .countries_colloms div ul li:after {
+        width: 60px;
+        transform: translateX(-84%);
+    }
+
     .map_box_info {
         width: 343px;
         margin: 0 auto;
         padding-top: 271px;
+        padding-bottom: 24px;
     }
 
     .map_box_info div h1 {
@@ -1046,6 +1068,7 @@ screen and (max-width: 428px) {
 
     .map_box_info div p {
         width: 343px;
+        height: 100%;
     }
 
     .img_map {
@@ -1092,15 +1115,15 @@ screen and (max-width: 428px) {
     .partners_info_images_img2 {
         width: 185px;
         height: 138px;
-        left: 14px;
-        top: 5368px;
+        left: 528px;
+        top: 5261px;
     }
 
     .partners_info_images_img1 {
         width: 243px;
         height: 181px;
-        left: 118px;
-        top: 5476px;
+        left: 308px;
+        top: 5126px;
     }
 
     .storage_info {
@@ -1113,6 +1136,7 @@ screen and (max-width: 428px) {
         width: 343px;
         height: 256px;
         margin: 0 auto;
+        margin-bottom: 48px;
     }
 
     .storage_info_text {
@@ -1125,5 +1149,127 @@ screen and (max-width: 428px) {
     .storage_info_text p {
         width: 343px;
         height: 297px;
+    }
+
+    .our_team {
+        height: 1550px;
+        padding-top: 32px;
+    }
+
+    .our_team_box {
+        width: 343px;
+        margin: 0 auto;
+    }
+
+    .our_team_box__head {
+        width: 343px;
+        height: 104px;
+    }
+
+    .our_team_box__info {
+        margin-top: 24px;
+    }
+
+    .team {
+        align-items: center;
+    }
+
+    .get_in_touch {
+        padding: 0;
+        height: 667px;
+    }
+
+    .get_in_touch__info {
+        width: 343px;
+        margin: 0 auto;
+    }
+
+    .get_in_touch_text {
+        width: 343px;
+        height: 100%;
+        margin-top: 48px;
+    }
+
+    .get_in_touch_text p {
+        margin-top: 15px;
+    }
+
+    .section_get_in_touch__form {
+        width: 343px;
+        margin-top: 32px;
+    }
+
+    .align-right {
+        text-align: center;
+    }
+
+    input[type=submit] {
+        width: 343px;
+    }
+
+    #firstname,
+    #email,
+    #subject,
+    #message {
+        width: 343px;
+    }
+
+    .footer {
+        height: 483px;
+    }
+
+    .footer_box {
+        width: 343px;
+        height: 403px;
+    }
+
+    .footer_nav_ul {
+        flex-direction: column;
+        width: 161px;
+        height: 175px;
+        margin: 0 auto;
+    }
+
+    .mobile-menu {
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(207, 47, 33, 0.85);
+        justify-content: center;
+        transition: 1000ms ease all;
+    }
+    
+
+    .mobile-menu li, .mobile-menu li a{
+        font-size: 24px;
+        line-height: 120%;
+        text-align: center;
+        margin-left: 0;
+        padding: 20px 40px;
+        color: #FFFFFF;
+    }
+    .mobile-menu .button {
+     
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+    .mobile-menu-btn {
+        z-index: 3;
+        transition: 1000ms ease all;
+    }
+    .active-menu-btn {
+        transform: rotate(180deg);
+    }
+    .slide-out {
+        top: 0;
+        max-width: 429px;
+        height: 667px;
+        padding-top: 64px;
+    }
+    .display-none {
+        display: none;
     }
 }
