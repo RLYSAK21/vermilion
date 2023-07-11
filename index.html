@@ -8,26 +8,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vermillion</title>
 </head>
 
 <body>
     <header>
-        <div class="mobile-header">
-            <div class="mobile-nav-header mobile-menu-btn">
-                <img src="./images/Vermillion Main Logo 2400x1800 (4) 1.svg" alt="Logo" style="" class="logo">
-                <i class="fa fa-bars " style="font-size: 48px; color: white;"></i>
-            </div>
-            <ul class="mobile-menu slide-out display-none">
-                <li><a href="#about_us">About Us</a></li>
-                <li><a href="#our_products">Our Products</a></li>
-                <li><a href="#map">Map of Destinations</a></li>
-                <li><a href="#logistic">Logistic</a></li>
-                <li><a href="#our_team">Our Team</a></li>
-                <a class="button " href="#contact_us">Contact Us</a>
-            </ul>
-
-        </div>
         <div class="header">
             <img src="./images/Vermillion Main Logo 2400x1800 (4) 1.svg" alt="Logo" style="" class="logo">
             <nav>
@@ -41,6 +27,21 @@
             </nav>
             <a class="button " href="#contact_us">Contact Us</a>
             <!-- <button class="button">Contact Us</button> -->
+        </div>
+        <div class="mobile-header">
+            <div class="mobile-nav-header mobile-menu-btn">
+                <img src="./images/Vermillion Main Logo 2400x1800 (4) 1.svg" alt="Logo" class="logo">
+                <i class="fa fa-close"></i>
+                <i class="fa fa-bars "></i>
+            </div>
+            <ul class="mobile-menu slide-out display-none">
+                <li><a href="#about_us">About Us</a></li>
+                <li><a href="#our_products_mobile">Our Products</a></li>
+                <li><a href="#map">Map of Destinations</a></li>
+                <li><a href="#logistic">Logistic</a></li>
+                <li><a href="#our_team">Our Team</a></li>
+                <a class="button " href="#contact_us">Contact Us</a>
+            </ul>
         </div>
         <div class="slogan">
             <div class="slogan_about_company">
@@ -108,7 +109,7 @@
             </div>
         </div>
     </div>
-    <div id="our_products" class="mobile-our-products_box">
+    <div id="our_products_mobile" class="mobile-our-products_box">
         <h1 class="our_products_title font_size_500">Our Products</h1>
         <div class="slider-container_our_products">
             <div class="slider_our_products">
@@ -202,7 +203,7 @@
 
         </section>
 
-        <section class="map">
+        <section  class="map">
             <div class="map_box">
                 <div id="map" class="map_box_info">
                     <div>
@@ -475,8 +476,6 @@
     </footer>
     <!-- jquery -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
-
-    <!-- slick.min.js -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     <script type="text/javascript">
@@ -499,6 +498,30 @@
                 speed: 500,
                 slidesToShow: 1,
                 variableWidth: true,
+            });
+        });
+        $(document).ready(function(){
+            $(".mobile-menu-btn .fa-close").hide();
+
+            $(".mobile-menu-btn .fa-bars").click(function () {
+                $(this).hide();
+                $(".mobile-menu-btn .fa-close").show();
+                $(".mobile-header ul").addClass("active");
+            });
+            $(".mobile-menu-btn .fa-close").click(function () {
+                $(this).hide();
+                $(".mobile-menu-btn .fa-bars").show();
+                $(".mobile-header ul").removeClass("active");
+            });
+            $(".mobile-menu li a").click(function () { 
+                $(".fa-close").hide();
+                $(".mobile-menu-btn .fa-bars").show();
+                $(".mobile-header ul").removeClass("active");
+            });
+            $(".mobile-menu a").click(function () { 
+                $(".fa-close").hide();
+                $(".mobile-menu-btn .fa-bars").show();
+                $(".mobile-header ul").removeClass("active");
             });
         });
     </script>

@@ -525,7 +525,8 @@ nav ul li a {
     position: absolute;
     width: 420px;
     height: 312px;
-    left: 890px;
+    margin-left: 180px;
+    /* left: 890px; */
     top: 3368px;
 
     background: #D9D9D9;
@@ -883,8 +884,8 @@ footer {
 
 /* ----------------------------------MOBILE VERSION-------------------------------------------------- */
 
-@media screen and (max-device-width:428px),
-screen and (max-width: 428px) {
+@media screen and (max-device-width: 700px),
+screen and (max-width: 700px) {
 
     .header,
     .our-products_box {
@@ -905,6 +906,7 @@ screen and (max-width: 428px) {
         width: 337px;
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
 
     .history_of_company_box_head,
@@ -944,6 +946,8 @@ screen and (max-width: 428px) {
 
     header {
         height: 667px;
+        background-position-x: center;
+        background-size: cover;
     }
 
     .slogan_about_company {
@@ -1026,8 +1030,7 @@ screen and (max-width: 428px) {
         width: 100vw;
         display: block;
         position: absolute;
-        padding-top: 1411px;
-        margin: 0 auto;
+        margin-top: 1411px;
     }
 
     .our_products_title {
@@ -1050,11 +1053,13 @@ screen and (max-width: 428px) {
         width: 60px;
         transform: translateX(-84%);
     }
-
+    .map_box {
+        padding-top: 171px;
+    }
     .map_box_info {
         width: 343px;
         margin: 0 auto;
-        padding-top: 271px;
+        padding-top: 100px;
         padding-bottom: 24px;
     }
 
@@ -1089,6 +1094,7 @@ screen and (max-width: 428px) {
         padding-top: 40px;
         height: 100%;
         margin: 0 auto;
+        padding-bottom: 20px;
     }
 
     .partners_info_text h1 {
@@ -1106,24 +1112,30 @@ screen and (max-width: 428px) {
     }
 
     .partners_info_images {
-        width: 448px;
+        width: 100vw;
+        max-width: 429px;
         height: 283px;
         margin: 0 auto;
-        padding-top: 24px;
+        background-size: 150%;
+        background-position-y: -90px;
+        background-position-x: -100px;
+        background-repeat: no-repeat;
     }
 
     .partners_info_images_img2 {
-        width: 185px;
-        height: 138px;
-        left: 528px;
-        top: 5261px;
+        width: 243px;
+        height: 181px;
+        margin-left: 140px;
+        top: 5260px;
+        border: 0;
     }
 
     .partners_info_images_img1 {
-        width: 243px;
-        height: 181px;
-        left: 308px;
-        top: 5126px;
+        width: 210px;
+        height: 158px;
+        left: 14px;
+        top: 5114px;
+        border: 0;
     }
 
     .storage_info {
@@ -1142,7 +1154,7 @@ screen and (max-width: 428px) {
     .storage_info_text {
         width: 343px;
         height: 100%;
-        padding-top: 53px;
+        padding-top: 38px;
         margin: 0 auto;
     }
 
@@ -1213,6 +1225,10 @@ screen and (max-width: 428px) {
     #message {
         width: 343px;
     }
+    #subject {
+        height: 100px;
+        margin-top: 14px;
+    }
 
     .footer {
         height: 483px;
@@ -1237,39 +1253,60 @@ screen and (max-width: 428px) {
         position: fixed;
         height: 100%;
         width: 100%;
-        background-color: rgba(207, 47, 33, 0.85);
+        background-color: rgba(207, 47, 33, 0.95);
         justify-content: center;
         transition: 1000ms ease all;
     }
-    
 
-    .mobile-menu li, .mobile-menu li a{
-        font-size: 24px;
+
+    .mobile-menu li,
+    .mobile-menu li a {
+        font-size: 30px;
         line-height: 120%;
         text-align: center;
         margin-left: 0;
         padding: 20px 40px;
         color: #FFFFFF;
     }
+
     .mobile-menu .button {
-     
+
         margin: 0 auto;
-        margin-top: 100px;
+        margin-top: 80px;
+        width: 343px !important;
     }
+
     .mobile-menu-btn {
         z-index: 3;
         transition: 1000ms ease all;
     }
+
     .active-menu-btn {
         transform: rotate(180deg);
     }
+
     .slide-out {
         top: 0;
         max-width: 429px;
         height: 667px;
-        padding-top: 64px;
+        padding-top: 104px;
     }
+
     .display-none {
         display: none;
+    }
+
+    .mobile-menu-btn .fa-close,
+    .mobile-menu-btn .fa-bars {
+        right: 25px;
+        font-size: 48px;
+        color: #FFFFFF;
+        cursor: pointer;
+    }
+    .mobile-menu-btn .fa-close {
+        position: fixed;
+    }
+    .mobile-header ul.active {
+        display: block;
     }
 }
