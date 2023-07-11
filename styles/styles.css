@@ -1112,6 +1112,9 @@ screen and (max-width: 700px) {
     }
 
     .partners_info_images {
+        position: relative;
+        display: flex;
+        flex-direction: column-reverse;
         width: 100vw;
         max-width: 429px;
         height: 283px;
@@ -1125,8 +1128,8 @@ screen and (max-width: 700px) {
     .partners_info_images_img2 {
         width: 243px;
         height: 181px;
-        margin-left: 140px;
-        top: 5437px;
+        margin-left: 132px;
+        top: 110px;
         border: 0;
     }
 
@@ -1134,7 +1137,7 @@ screen and (max-width: 700px) {
         width: 210px;
         height: 158px;
         left: 14px;
-        top: 5291px;
+        top: -19px;
         border: 0;
     }
 
