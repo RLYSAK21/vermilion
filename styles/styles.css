@@ -342,7 +342,6 @@ nav ul li a {
     background: #FFFFFF;
     border: 1px solid #F0EDF3;
     border-radius: 6px;
-
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -355,7 +354,6 @@ nav ul li a {
     margin-top: 14px;
     padding: 0px 16px 14px;
     gap: 10px;
-
     width: 259px;
     /* height: 75px; */
     text-align: left;
@@ -399,7 +397,45 @@ nav ul li a {
 }
 .content {
     display: none;
+    position: relative;
 }
+.content h2 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #836D6B;
+}
+.content ul {
+    margin-left: 20px;
+}
+.content ul li {
+    list-style: disc;
+    margin-top: 5px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 15px;
+    color: #836D6B;
+}
+.expanded {
+    max-height: 1000px;
+  }
+.contact-btn {
+    position: absolute;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    top: 129px;
+    right: -100px;
+    padding: 5px 10px;
+    border: none;
+    color: #CF2F21;;
+    cursor: pointer;
+  }
 /* ----------------------------------------------------------------------------------- */
 
 .map {
