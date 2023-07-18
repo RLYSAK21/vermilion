@@ -1327,8 +1327,7 @@ screen and (max-width: 700px) {
 
     .slide-out {
         top: 0;
-        max-width: 429px;
-        height: 667px;
+        height: 100vh;
         padding-top: 104px;
     }
 
