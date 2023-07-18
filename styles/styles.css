@@ -338,8 +338,7 @@ nav ul li a {
 .slider_our_products__box {
     padding: 4px;
     width: 350px !important;
-    height: 357px !important;
-
+    /* height: 357px !important; */
     background: #FFFFFF;
     border: 1px solid #F0EDF3;
     border-radius: 6px;
@@ -358,7 +357,7 @@ nav ul li a {
     gap: 10px;
 
     width: 259px;
-    height: 75px;
+    /* height: 75px; */
     text-align: left;
 }
 
@@ -398,7 +397,9 @@ nav ul li a {
     width: 341.98px;
     height: 259.98px;
 }
-
+.content {
+    display: none;
+}
 /* ----------------------------------------------------------------------------------- */
 
 .map {

@@ -72,7 +72,17 @@
                     </div>
                     <div class="our_products_info">
                         <h1 class="slider_our_products__title">SUNFLOWER SEED MEAL</h1>
-                        <button class="our_products_button">Read more <img class="arrow_right"
+                        <div class="content">
+                            <h2>HighPro: protein: min 36% AS IS <br />
+                                MidPro: protein: min 34% AS IS</h2>
+                            <ul>
+                                <li>oil: max 1.5%</li>
+                                <li>moisture: max 12%</li>
+                                <li>crude fiber: max 19%</li>
+                                <li>ash: max 9%</li>
+                            </ul>
+                        </div>
+                        <button class="our_products_button" onclick="toggleContent(this)">Read more <img class="arrow_right"
                                 src="./images/arrow-right-svgrepo-com.svg" alt=""> </button>
                     </div>
                 </div>
@@ -203,7 +213,7 @@
 
         </section>
 
-        <section  class="map">
+        <section class="map">
             <div class="map_box">
                 <div id="map" class="map_box_info">
                     <div>
@@ -500,7 +510,7 @@
                 variableWidth: true,
             });
         });
-        $(document).ready(function(){
+        $(document).ready(function () {
             $(".mobile-menu-btn .fa-close").hide();
 
             $(".mobile-menu-btn .fa-bars").click(function () {
@@ -513,18 +523,32 @@
                 $(".mobile-menu-btn .fa-bars").show();
                 $(".mobile-header ul").removeClass("active");
             });
-            $(".mobile-menu li a").click(function () { 
+            $(".mobile-menu li a").click(function () {
                 $(".fa-close").hide();
                 $(".mobile-menu-btn .fa-bars").show();
                 $(".mobile-header ul").removeClass("active");
             });
-            $(".mobile-menu a").click(function () { 
+            $(".mobile-menu a").click(function () {
                 $(".fa-close").hide();
                 $(".mobile-menu-btn .fa-bars").show();
                 $(".mobile-header ul").removeClass("active");
             });
         });
     </script>
+    <script>
+        function toggleContent(button) {
+          var content = button.parentNode.querySelector('.content');
+          content.classList.toggle('expanded');
+    
+          if (content.classList.contains('expanded')) {
+            content.style.display = "inline";
+            button.innerHTML = 'Read Less';
+          } else {
+            button.innerHTML = 'Read More';
+            content.style.display = "none";
+          }
+        }
+      </script>
 </body>
 
 </html>
