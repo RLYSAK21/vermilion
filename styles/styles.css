@@ -338,7 +338,7 @@ nav ul li a {
 .slider_our_products__box {
     padding: 4px;
     width: 350px !important;
-    /* height: 357px !important; */
+    height: 357px;
     background: #FFFFFF;
     border: 1px solid #F0EDF3;
     border-radius: 6px;

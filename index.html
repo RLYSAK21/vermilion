@@ -621,10 +621,12 @@
 
             if (content.classList.contains('expanded')) {
                 content.style.display = "inline";
-                button.innerHTML = 'Read less';
+                button.innerHTML = 'Read less <\img class="arrow_right" src="./images/arrow-right-svgrepo-com.svg" alt="">';
+                content.parentNode.parentNode.style.height = "fit-content";
             } else {
-                button.innerHTML = 'Read more';
+                button.innerHTML = 'Read more <\img class="arrow_right" src="./images/arrow-right-svgrepo-com.svg" alt="">';
                 content.style.display = "none";
+                content.parentNode.parentNode.style.height = "357px";
             }
         }
     </script>
