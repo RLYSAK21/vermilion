@@ -302,7 +302,7 @@ nav ul li a {
 /* ------------------------------------ */
 .our-products_box {
     position: absolute;
-    margin-top: 974px;
+    margin-top: 950px;
     width: 100vw;
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -386,6 +386,7 @@ nav ul li a {
     justify-content: space-between;
     display: flex;
     align-items: center;
+    margin-top: 10px;
 }
 
 .arrow_right {
@@ -420,6 +421,8 @@ nav ul li a {
 
 .content ul {
     margin-left: 20px;
+    margin-block: 5px;
+    height: 134px;
 }
 
 .content ul li {
@@ -446,7 +449,7 @@ nav ul li a {
     left: 200px;
     /* top: 129px; */
     /* right: -100px; */
-    padding: 17px 10px;
+    padding: 18px 10px;
     border: none;
     color: #CF2F21;
     cursor: pointer;

@@ -197,6 +197,7 @@
                         <h1 class="slider_our_products__title">WHEAT BRAN PELLETS</h1>
                         <div class="content">
                             <ul>
+                                <br /> 
                                 <li>protein: min 14%</li>
                                 <li>fiber: max 9%</li>
                                 <li>moisture: max 14.5%</li>
@@ -982,11 +983,12 @@
             if (content.classList.contains('expanded')) {
                 content.style.display = "inline";
                 button.innerHTML = '<\img class="arrow_left" src="./images/arrow-left-svgrepo-com.svg" alt="arrow_left"> Read less ';
-                content.parentNode.parentNode.style.height = "fit-content";
+                content.parentNode.parentNode.style.height = "510px";
+                // content.parentNode.parentNode.style.minHeight = "420px";
             } else {
                 button.innerHTML = 'Read more <\img class="arrow_right" src="./images/arrow-right-svgrepo-com.svg" alt="arrow_left">';
                 content.style.display = "none";
-                content.parentNode.parentNode.style.height = "357px";
+                content.parentNode.parentNode.style.height = "380px";
             }
         }
         function toggleMoreProducts(button) {
