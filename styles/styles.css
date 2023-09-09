@@ -45,8 +45,8 @@ body {
     display: none;
 }
 
-.mobile-nav,
-.mobile-our-products_box {
+.mobile-nav
+{
     display: none;
 }
 
@@ -153,6 +153,7 @@ nav ul li a {
     width: 680px;
     height: 306px;
     margin-top: 174px;
+    /* margin-left: 30%; */
     margin-left: 130px;
 }
 
@@ -172,7 +173,7 @@ nav ul li a {
 
 .slogan_about_company__button {
     padding: 18px;
-    gap: 10px;
+    margin: 0 auto;
 
     width: 180px;
     height: 55px;
@@ -189,11 +190,12 @@ nav ul li a {
     text-align: center;
 
     color: #E34234;
+    margin-top: 30px;
 }
 
 /* ----------------------------------------------------------------------------------- */
 .history_of_company {
-    height: 1321px;
+    height: 1021px;
     padding: 80px 130px;
 }
 
@@ -207,6 +209,7 @@ nav ul li a {
     flex-direction: row;
     align-items: flex-start;
     padding: 0px;
+    justify-content: center;
     gap: 121px;
 }
 
@@ -221,11 +224,13 @@ nav ul li a {
 
 .supplier-information {
     margin-top: 64px;
-    text-align: left;
+    justify-content: center;
+    gap: 35px;
 }
 
 .supplier-information_box {
     min-width: 310px;
+    max-width: 311px;
     margin-right: 57px;
     height: 215px;
     padding-left: 33px;
@@ -317,10 +322,10 @@ nav ul li a {
 
 .slider-container_our_products {
     margin-top: 42px;
-    margin-left: 130px;
+    /* margin-left: 130px; */
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 
 }
 
@@ -328,7 +333,7 @@ nav ul li a {
     overflow-x: hidden;
     white-space: nowrap;
     -ms-overflow-style: none;
-    display: flex;
+    display: grid;
 }
 
 .slider_our_products::-webkit-scrollbar {
@@ -357,7 +362,7 @@ nav ul li a {
     padding: 0px 16px 14px;
     width: 259px;
     /* height: 75px; */
-    height: 99px;
+    /* height: 99px; */
     text-align: left;
 }
 
@@ -409,6 +414,11 @@ nav ul li a {
     display: none;
     position: relative;
 }
+.contentMoreProducts {
+    gap: 24px;
+    margin-top: 24px;
+    grid-template-columns: repeat(4,1fr);
+}
 
 .content h2 {
     font-family: 'Poppins';
@@ -422,7 +432,7 @@ nav ul li a {
 .content ul {
     margin-left: 20px;
     margin-block: 5px;
-    height: 134px;
+    /* height: 134px; */
 }
 
 .content ul li {
@@ -437,7 +447,7 @@ nav ul li a {
 }
 
 .expanded {
-    max-height: 1000px;
+    max-height: 1500px;
 }
 
 .contact-btn {
@@ -455,6 +465,17 @@ nav ul li a {
     cursor: pointer;
 }
 
+
+
+
+/* ---------------------------------------------------------------- */
+
+.main-information-our-products {
+    margin-top: 42px;
+    display: flex;
+    gap: 24px;
+}
+
 /* ----------------------------------------------------------------------------------- */
 
 .map {
@@ -462,11 +483,13 @@ nav ul li a {
     left: 0px;
     background: #F0EDF3;
     padding: 177px 62px 18px 130px;
+    margin-top: -135px;
 }
 
 .map_box {
     height: 100%;
     display: flex;
+    justify-content: center;
 }
 
 .map_box_info {
@@ -544,6 +567,8 @@ nav ul li a {
 
 .partners_box {
     height: 100%;
+    justify-content: center;
+    display: grid;
 }
 
 .partners_info {
@@ -569,6 +594,7 @@ nav ul li a {
 }
 
 .partners_info_images {
+    position: relative;
     margin-left: 69px;
     width: 774px;
     height: 490px;
@@ -576,14 +602,13 @@ nav ul li a {
 }
 
 .partners_info_images_img2 {
+    position: absolute;
     box-sizing: border-box;
 
-    position: absolute;
     width: 420px;
     height: 312px;
     margin-left: 180px;
-    /* left: 890px; */
-    top: 3368px;
+    bottom: 9px;
 
     background: #D9D9D9;
     border: 10px solid #FFFFFF;
@@ -593,8 +618,6 @@ nav ul li a {
     position: absolute;
     width: 320px;
     height: 238px;
-    left: 710px;
-    top: 3180px;
 
     background: #D9D9D9;
     border: 10px solid #FFFFFF;
@@ -634,12 +657,13 @@ nav ul li a {
     height: 581px;
     background: #F0EDF3;
     padding-top: 60px;
+    display: flex;
+    justify-content: center;
 }
 
 .our_team_box {
     width: 1180px;
     height: 461px;
-    margin-left: 130px;
 }
 
 .our_team_box__head {
@@ -717,8 +741,10 @@ nav ul li a {
 
 .get_in_touch {
     height: 443px;
-    padding-inline: 130px;
+    /* padding-inline: 130px; */
     padding-top: 80px;
+    justify-content: center;
+    display: flex;
 }
 
 .get_in_touch__info {
@@ -866,10 +892,6 @@ footer {
         padding: 80px 210px;
     }
 
-    .slider-container_our_products {
-        margin-left: 170px;
-    }
-
     .map {
         padding: 177px 20px 18px 210px;
     }
@@ -878,21 +900,14 @@ footer {
         padding: 64px 0 80px 210px;
     }
 
-    .our_team_box {
-        margin-left: 210px;
-    }
 
-    .get_in_touch {
-        padding-inline: 210px;
-    }
-
-    .partners_info_images_img1 {
+    /* .partners_info_images_img1 {
         left: 790px;
-    }
+    } */
 
-    .partners_info_images_img2 {
+    /* .partners_info_images_img2 {
         left: 970px;
-    }
+    } */
 }
 
 @media only screen and (min-width: 1700px) {
@@ -909,10 +924,6 @@ footer {
         padding: 80px 370px;
     }
 
-    .slider-container_our_products {
-        margin-left: 211px;
-    }
-
     .map {
         padding: 177px 302px 18px 370px;
     }
@@ -921,21 +932,14 @@ footer {
         padding: 64px 0 80px 370px;
     }
 
-    .our_team_box {
-        margin-left: 370px;
-    }
 
-    .get_in_touch {
-        padding-inline: 370px;
-    }
-
-    .partners_info_images_img1 {
+    /* .partners_info_images_img1 {
         left: 950px;
-    }
+    } */
 
-    .partners_info_images_img2 {
+    /* .partners_info_images_img2 {
         left: 1130px;
-    }
+    } */
 }
 
 /* ----------------------------------MOBILE VERSION-------------------------------------------------- */
@@ -1163,9 +1167,8 @@ screen and (max-width: 700px) {
 
     .partners_info_text p {
         width: 343px;
-        height: 243px;
         margin-top: 15px;
-
+        height: 0;
     }
 
     .partners_info_images {
@@ -1174,7 +1177,6 @@ screen and (max-width: 700px) {
         flex-direction: column-reverse;
         width: 100vw;
         max-width: 429px;
-        height: 283px;
         margin: 0 auto;
         background-size: 150%;
         background-position-y: -90px;
@@ -1206,7 +1208,6 @@ screen and (max-width: 700px) {
 
     .storage_info_img {
         width: 343px;
-        height: 256px;
         margin: 0 auto;
         margin-bottom: 48px;
     }
@@ -1220,7 +1221,6 @@ screen and (max-width: 700px) {
 
     .storage_info_text p {
         width: 343px;
-        height: 297px;
     }
 
     .our_team {
@@ -1379,10 +1379,19 @@ screen and (max-width: 700px) {
     }
 
     .expanded {
-        max-height: 3000px;
+        max-height: 4000px;
     }
 
     .expanded .slider_our_products__box {
         margin-bottom: 24px;
+    }
+    .main-information-our-products {
+        display: grid;
+    }
+    .contentMoreProducts {
+        display: grid;
+        gap: 24px;
+        grid-template-columns: none;
+        display: none;
     }
 }
